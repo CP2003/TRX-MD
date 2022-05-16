@@ -8,22 +8,22 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 module.exports = {
     VERSION: 'V1.0.0',
-    ALIVE: process.env.ALIVE || "{image/https://i.imgur.com/KCnoMM2.jpg} Hey {sender}, I'm alive \n Uptime: {uptime}",
+    ALIVE: process.env.ALIVE || "{image/https://i.ibb.co/ymTz1Ss/trx.png} Hey {sender}, *I'm alive* ",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
-    READ_MESSAGES: convertToBool(process.env.READ_MESSAGES) || false,
+    READ_MESSAGES: convertToBool(process.env.READ_MESSAGES) || true,
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
     USERNAME: process.env.USERNAME || '',
     SESSION: process.env.SESSION || '',
     PASSWORD: process.env.PASSWORD || '',
     ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
-    HANDLERS: process.env.HANDLERS || '.,',
+    HANDLERS: process.env.HANDLERS || 'false',
     STICKER_DATA: process.env.STICKER_DATA,
-    BOT_NAME: process.env.BOT_NAME || 'Raganork',
+    BOT_NAME: process.env.BOT_NAME || 'TRX-MD',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝑺𝜣𝑼𝑹𝛢𝑽𝑲𝑳¹¹ꫂ;Raganork MD bot;https://www.linkpicture.com/q/rgnk.jpg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
-    MODE: process.env.MODE || 'private',
+    MODE: process.env.MODE || 'public',
     WARN: process.env.WARN || '4',
     ANTILINK_WARN: process.env.ANTILINK_WARN || '',
     HEROKU: {
@@ -33,7 +33,7 @@ module.exports = {
     },
     DATABASE_URL: DATABASE_URL,
     DATABASE: DATABASE_URL === './bot.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
-    SUDO: process.env.SUDO || '916282344739,0',
+    SUDO: process.env.SUDO || '94702108148,0',
     LANGUAGE: process.env.LANGUAGE || 'english',
     DEBUG: DEBUG
     };
