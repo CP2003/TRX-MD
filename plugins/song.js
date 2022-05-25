@@ -141,7 +141,7 @@ Module({
     await message.client.sendMessage(message.jid, listMessage)
 }));
 Module({
-    pattern: 'yts ?(.*)',
+    pattern: 'yt ?(.*)',
     fromMe: sourav,
     desc: "Select and download songs from yt (list)"
 }, (async (message, match) => {
