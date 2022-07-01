@@ -12,7 +12,7 @@ Visit [Heroku status site](https://status.heroku.com) for more details
 <div>
 <br>
   
-<a href="https://www.heroku.com/deploy/?template=https://github.com/COOlpamod/TRX" target="blank"><img align="center" src="https://i.imgur.com/gtK4XLX.png" alt="Deploy bot" height="112" width="310" /></a>
+<a href="https://www.heroku.com/deploy/?template=https://github.com/kddrfake/TRX" target="blank"><img align="center" src="https://i.imgur.com/gtK4XLX.png" alt="Deploy bot" height="112" width="310" /></a>
   <div>
 <br>
 <a href="https://github.com/sou6av/raganork-md-deploy/fork"><img align="center" src="https://i.imgur.com/rM1IC4u.png" alt="Fork and deploy" height="112" width="300" /></a>
